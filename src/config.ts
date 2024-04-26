@@ -5,7 +5,7 @@ export const NAV_ITEMS = [
   },
   {
     path: '/generic',
-    title: 'Generic Page',
+    title: 'un poco de tech y el cine',
   },
   {
     path: '/begin',
