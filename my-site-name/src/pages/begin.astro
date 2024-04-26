@@ -1,0 +1,53 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Post from '../components/Post.astro';
+import { SITE } from '../config';
+---
+
+<Layout title={SITE.title}>
+  <!-- Main -->
+  <div id="main">
+    <Post
+      date={new Date('2024-03-27')}
+      title="Todo tiene un inicio<br />Cinematografo"
+      summary="Todo inicio en el siglo XIX mas especifico (1895), con la creacion del cinematografo<br />por parte de los hermanos lumiere, una maquina que permitia grabar y proyectar imagen."
+      image={'/images/cinematografo.jpg'}
+      contents={'<p>. </p>'}
+    />
+  </div>
+  <div id="main">
+    <center><h1>Color en el Cine</h1></center>
+    <p> La primera pelicula en ser filmada en color fue "The World, the Flesh an the Devil" en 1914, usando el sistema
+      kinemacolor, sin embargo, la llegada del Technicolor fue cuando el filmar a color se popularizo. 
+      (da click en la imagen para poder ver la pelicula desde YouTube)
+    </p>
+    <center><a href="https://www.youtube.com/watch?v=Y75y2shz6UU"><img src="/images/cinecolor.jpg"/></a></center>
+  </div>
+  <div id="main">
+    <center><h1>¡Sonido por primera vez!</h1></center>
+    <p>Don Juan, fue la primera pelicula comercial en tener una banda sonora completa, efectos de sonido y dialogos 
+      emplazados, sin embargo se considera muda ya que fue producida como tal, por lo tanto "The Singer Jazz" es
+      considerada como la primera.  (da click en la imagen para poder ver la pelicula desde YouTube).
+    </p>
+    <center><a href="https://www.youtube.com/watch?v=yhbOJ6eho-8"><img src="/images/sonido2.jpg" height="400" width="700"/></a></center>
+  </div>
+  <div id="main">
+    <center><h1>Animacion</h1></center>
+    <p>Desde antes de cine a colr, se lleva experimentando con la animacion. El primer largometraje llego en 1937
+      por parte de disney con Blanca nieves, aunque en argentina se experimento con un supuesto largometraje en 1971
+      llamado el apostol que ha dia de hoy es lost media. (Da click en la imagen si quieres saber mas sobre ese tema).
+      <center><a href="https://www.youtube.com/watch?v=O5m9RXw0RBs"><img src="/images/apostol.jpg" height="400" width="700"/></a></center>
+    </p>
+  </div>
+  <div id ="main">
+    <center><h1>Pantalla ¿Azul?</h1></center>
+    <p>La pantalla azul, se empezo desde los años 30 del siglo pasado en los estudios RKO (Radio Picture)
+      usandolo por primera vez en la pelicula "El Ladron de Bagda" de 1940, aun que este metodo de grabacion se popularizo
+      en los 70-80 gracias a STAR WARS, que hacia mucho uso de esa tecnologia.
+    </p>
+    <center><img src="/images/azul.jpg" height="400" width="700"/></center>
+  </div>
+</Layout>
+
+
+

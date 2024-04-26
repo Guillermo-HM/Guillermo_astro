@@ -1,0 +1,50 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Post from '../components/Post.astro';
+import { SITE } from '../config';
+---
+
+<Layout title={SITE.title}>
+  <!-- Main -->
+  <div id="main">
+    <Post
+      date={new Date('2024-04-25')}
+      title="UN poco mas Sobre:<br />Tecnologia y inovacion"
+      summary="Tras numerosos expermentos desde principios del siglo XIX mas especifico en 1952, llego Bwana Devil, un filme esteroscopico cuyo exito lanzo a los estudios a crear hasta 60 peliculas en 3D."
+      image={'/images/3D.jpg'}
+      contents={'<p>.</p>'}
+    />
+  </div>
+  <div id="main">
+    <center><h1>CGI (Computer Generated Image)</h1></center>
+    <p>Con el avance de las tecnologias, el medio del cine trataba de aprovecharse, como el caso 
+      de West World del año 1973 que fue de las primeras peliculas en user el CGI.
+    </p>
+    <center><img src="/images/world.jpg" width="700" height="400"/></center>
+  </div>
+
+  <div id="main">
+    <center><h1>Animatronicos</h1></center>
+    <p>Los parques tematicos empezaron a tratar de usar los animatronicos el cine tambien adapto esa idea y fue en 1964
+      que se empezo  a popularizar el uso de las mismas gracias a la pelicula de Mary Popins de 1964.
+    </p>
+    <center><img src="/images/popins.gif" width="700" height="400"/></center>
+  </div>
+
+  <div id="main">
+    <center><h1>Cine Digital</h1></center>
+    <p>La primera pelicula grabada en formato digital fue Dancer in the Dark en el año 2000, gracias al uso de estas nuevas tecnologicas
+      se empezaron a grabar mas peliculas con este formato como STAR WARS: la guerra de lo clones en el año 2002.
+    </p>
+    <center><img src="/images/dancer2.jpg" height="400" width="700"/></center>
+  </div>
+  
+  <div id="main">
+    <center><h1>Avatar</h1></center>
+    <p>En 2009, James Cameron y su equipo rodaron Avatr utlizando la revolucionaria "tecnica de captura de actuacion facial
+      basado en la imagen  para dar vida  de la forma mas real a los personajes ". como tal esta tecnologia no es nueva ya quieres
+      ha sido utilizado en el mundo de los videojuegos.
+    </p>
+    <center><img src="/images/avatar.jpg" height="400" width="700"/></center>
+  </div>
+</Layout>

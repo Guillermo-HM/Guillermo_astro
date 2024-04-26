@@ -1,0 +1,50 @@
+---
+import { SITE } from 'src/config';
+
+const { intro } = Astro.props;
+---
+
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+  integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+></script>
+<script>
+  import '../scripts/jquery.scrollex';
+  import '../scripts/jquery.scrolly';
+  import '../scripts/utils';
+  import '../scripts/main';
+</script>
+
+{
+  intro && (
+    <>
+      <div id="intro">
+        <h1>
+          Cine y Tecnologia
+          <br />
+          Pares Impares
+        </h1>
+        <p>
+          En las ultimas decadas, la industria del cine ha experimentado cambios revolucionarios gracias a los avances 
+          tecnologicos
+          <br />
+          Desde los primeros dias del cine mudo hasta la era de las pantallas 3D y las salas 4DX 
+        </p>
+        <ul class="actions">
+          <li>
+            <a href="#header" class="button icon solid solo fa-arrow-down scrolly">
+              Continue
+            </a>
+          </li>
+        </ul>
+      </div>
+    </>
+  )
+}
+
+<!-- Header -->
+<header id="header">
+  <a href="/" class="logo">{SITE.title}</a>
+</header>
